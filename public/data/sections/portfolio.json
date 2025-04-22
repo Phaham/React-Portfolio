@@ -1,0 +1,157 @@
+{
+    "locales": {
+        "en": {
+            "title": "Portfolio",
+            "title_long_prefix": "Take a look at",
+            "title_long": "My **Portfolio**"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "portfolio",
+            "component": "ArticlePortfolio",
+            "config": {},
+            "locales": {},
+
+            "categories": [
+                {
+                    "id": "apps",
+                    "locales": {
+                        "en": {"singular": "App", "plural": "Apps"}
+                    }
+                },
+                {
+                    "id": "websites",
+                    "locales": {
+                        "en": {"singular": "Website", "plural": "Web"}
+                    }
+                },
+                {
+                    "id": "utilities",
+                    "locales": {
+                        "en": {"singular": "Utility", "plural": "Utilities"}
+                    }
+                }
+            ],
+
+            "items": [
+                {
+                    "categoryId": "utilities",
+                    "icon": {
+                        "img": "images/pictures/jobs-territory.jpg",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+
+                    "links": [
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Phaham/Jobs-Territory-2025"},
+                        {"faIcon": "fa-solid fa-link", "href": "https://www.jobsterritory.com"}
+                    ],
+
+                    "locales": {
+                        "en": {
+                            "title": "Jobs Territory Web Portal",
+                            "text": "Developed a <b>recruitment platform</b> for <b>Jobs Territory</b>, enabling <b>Job Seekers</b> to <b>apply for jobs</b> while the <b>Jobs Territory team</b> manages <b>job postings</b> and <b>hiring support</b>.",
+                            "tags": ["Node.js", "REST", "Tailwind CSS", "Express.js", "MongoDB", "Ejs"]
+                        }
+                    }
+                },
+
+                {
+                    "categoryId": "apps",
+                    "icon": {
+                        "img": "images/pictures/boogiebites.PNG",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+
+                    "links": [
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Phaham/BoogieBites"},
+                        {"faIcon": "fa-solid fa-link", "href": "https://boogiebites.onrender.com/"}
+                    ],
+
+                    "locales": {
+                        "en": {
+                            "title": "BoogieBites",
+                            "text": "A fully-featured and responsive food Ordering and recipe Website comes with an integrated chat feature and payment gateway",
+                            "tags": ["Node.js", "Stripe", "Express.js", "MongoDB", "Socket.io"]
+                        }
+                    }
+                },
+
+                {
+                    "categoryId": "apps",
+                    "icon": {
+                        "img": "images/pictures/finance-app.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+
+                    "links": [
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Phaham/FinXpert"},
+                        {"faIcon": "fa-solid fa-link", "href": "https://fin-xpert.vercel.app/"}
+                    ],
+
+                    "locales": {
+                        "en": {
+                            "title": "FinXpert",
+                            "text": "A fiannce management platform that shows transactions  with use of dynamic different charts and graphs with intuitive UI, used ML algo for <b>revenue & predictions</b>.",
+                            "tags": ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"]
+                        }
+                    }
+                },
+
+
+                {
+                    "categoryId": "websites",
+                    "icon": {
+                        "img": "images/pictures/quickcache.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+
+                    "links": [
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Phaham/BoogieBites"}
+                    ],
+
+                    "locales": {
+                        "en": {
+                            "title": "QuickCache",
+                            "text": "It replicates core Redis functionalities such as key-value storage and command handling over a TCP server.",
+                            "tags": ["Node.js", "Express.js"]
+                        }
+                    }
+                },
+
+                {
+                    "categoryId": "apps",
+                    "icon": {
+                        "img": "images/pictures/practice.webp",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+
+                    "links": [
+                        {"faIcon": "fa-solid fa-link", "href": "https://spectra-viewer.vercel.app/practice-projects"}                    ],
+
+                    "media": {
+                        "youtubeVideo": null,
+                        "screenshots": {
+                            "aspectRatio": null,
+                            "images": []
+                        }
+                    },
+
+                    "locales": {
+                        "en": {
+                            "title": "Practice Projects",
+                            "text": "Developed multiple <b>practice projects</b> to strengthen expertise in <b>HTML</b>, <b>CSS</b>, <b>Tailwind CSS</b>, <b>JavaScript</b>, and <b>API integration</b>, focusing on building <b>responsive</b> and <b>dynamic web applications</b>.",
+                            "tags": ["React.js", "HTML", "CSS", "JavaScript", "Tailwind CSS", "API integration", "UI"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

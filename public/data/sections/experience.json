@@ -1,0 +1,78 @@
+{
+    "locales": {
+        "en": {
+            "title": "Experience",
+            "title_long_prefix": "Summary of my",
+            "title_long": "**Work** Experience"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "work",
+            "component": "ArticleTimeline",
+            "config": {},
+            "locales": {},
+
+            "items": [
+                {
+                    "icon": {
+                        "img": "images/pictures/novixpert.jpg",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "25/12/2024",
+                        "end": "Present"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**Machine Learning** Intern",
+                            "info": "Novixpert",
+                            "text": "Developing AI powered Inventory Management System for Novixpert, owning both frontend (Next.js/React) and backend (Node.js/Express). I wrote AWS Lambda functions and REST APIs to push live stock updates, and developed a C++ orchestrator that streams real‑time detection data from our pipeline, cutting data lag by over 70%.",
+                            "tags": ["Node.js", "Next.js", "DynamoDB", "AWS", "C++", "Express.js"]
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": "images/pictures/jobs-territory.jpg",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "23/11/2024",
+                        "end": "24/12/2024"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**Software Development** Intern",
+                            "info": "Jobs Territory",
+                            "text": "Designed and built a fully responsive employer portal from scratch,  Created a Job portal, Implemented RESTful APIs for job postings, application submissions, testimonials, and company logo uploads—integrating multer for secure file storage—enabling recruiters to manage listings and candidates to apply seamlessly.",
+                            "tags": ["JavaScript", "Node.js", "Express.js", "Ejs", "REST APIs", "Tailwind CSS"]
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": "images/pictures/school.jpg",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "12/5/2023",
+                        "end": "11/07/2023"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**Backend Development** Intern",
+                            "info": "Genesis Technologies",
+                            "text": "Developed a client's website resembling an exam portal, utilizing CDN caching and an optimized codebase to reduce latency, resulting in a 1.5x improvement in loading speed.",
+                            "tags": ["Node.js", "Express.js", "REST APIs"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

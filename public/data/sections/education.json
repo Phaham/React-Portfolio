@@ -1,0 +1,80 @@
+{
+    "locales": {
+        "en": {
+            "title": "Education",
+            "title_long_prefix": "This is my",
+            "title_long": "**Educational** Background"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "academic",
+            "component": "ArticleTimeline",
+            "config": {},
+            "locales": {},
+
+            "items": [
+                {
+                    "icon": {
+                        "img": "images/pictures/jamia.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "12/10/2020",
+                        "end": "05/20/2024"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**B.Tech** in Electronics and Communications Engineering",
+                            "info": "Jamia Millia Islamia",
+                            "text": "<ul><li>Attained CPI: 9.42</li></ul><ul><li>In sixth Semester attained SPI: 10</li></ul>",
+                            "tags": []
+                        }
+                    }
+                },
+
+                {
+                    "icon": {
+                        "img": "images/pictures/codingninjas.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "06/28/2020",
+                        "end": "12/01/2022"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Training in **DSA** and Computer Science Fundamentals",
+                            "info": "Coding Ninjas",
+                            "text": "Completed an intensive classroom program focused on DSA in C++, covering essential skills of computer science such as Operating Sytems, System Design, database management, and Object Oriented Programming. <ul><li>Attained Certificate Of Excellence in DSA</li></ul>",
+                            "tags": ["DSA (C++)", "System Design", "Operating System", "DBMS (MySQL)", "Object Oriented Programming"]
+                        }
+                    }
+                },
+
+                {
+                    "icon": {
+                        "img": "images/pictures/school.jpg",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "06/01/2017",
+                        "end": "04/01/2018"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**Intermediate** (12th)",
+                            "info": "PT. D. D. U. S. V. M. Inter College, CBSE Board",
+                            "text": "<p>Completed Intermediate in PCM from CBSE Board with <ul><li>Percentage: 91.8</p>",
+                            "tags": []
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

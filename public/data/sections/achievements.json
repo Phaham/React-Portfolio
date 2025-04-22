@@ -1,0 +1,216 @@
+{
+    "locales": {
+        "en": {
+            "title": "Awards",
+            "title_menu": "Achievements",
+            "title_long_prefix": "Here are my",
+            "title_long": "Career **Achievements**"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "certifications",
+            "component": "ArticleCards",
+            "config": {},
+            "locales": {
+                "en": { "title": "Certifications" }
+            },
+
+            "items": [
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-node-js",
+                        "faColors": {"bg": "#326CE5", "fill": "#EEE"}
+                    },
+                    "dates": {
+                        "start": "06/06/2023",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://www.udemy.com/certificate/UC-6399fd0e-4c10-4fe7-a052-c3a5c8d86348/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "Backend Development **Node.js**",
+                            "text": "Certified from Udemy"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": "images/pictures/icons8-c++-50.png",
+                        "fa": "",
+                        "faColors": {"bg": "#fff", "fill": ""}
+                    },
+                    "dates": {
+                        "start": "05/05/2021",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://certificate.codingninjas.com/verify/973b286f1d4f322a/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "Data Stuctures and **Algorithms**",
+                            "text": "Certified from Coding Ninjas"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-linux",
+                        "faColors": {"bg": "#eee", "fill": "#000"}
+                    },
+                    "dates": {
+                        "start": "05/05/2022",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://certificate.codingninjas.com/verify/b6685ca35f1a49b4/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "Operating Systems (**Linux**)",
+                            "text": "Certified from Coding Ninjas"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-js",
+                        "faColors": {"bg": "", "fill": ""}
+                    },
+                    "dates": {
+                        "start": "05/05/2022",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://www.udemy.com/certificate/UC-941ffa58-e5a7-41a3-a656-cc4d7ca125c5/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "JavaScript",
+                            "text": "Certified from Udemy"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-pc",
+                        "faColors": {"bg": "", "fill": ""}
+                    },
+                    "dates": {
+                        "start": "05/05/2022",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://certificate.codingninjas.com/verify/ec8808e4d79b4023/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "System Design",
+                            "text": "Certified from **Coding Ninjas**"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-database",
+                        "faColors": {"bg": "#47A248", "fill": "#EEE"}
+                    },
+                    "dates": {
+                        "start": "08/15/2023",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_certification", "href": "https://certificate.codingninjas.com/verify/f29a231048077eff/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "DBMS (**MySQL**)",
+                            "text": "Certified from Coding Ninjas"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": "awards",
+            "component": "ArticleThread",
+            "config": {},
+            "locales": {
+                "en": { "title": "Awards & Achievemnts" }
+            },
+
+            "items": [
+                {
+                    "dates": {
+                        "start": null,
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "more_info", "href": "https://leetcode.com/u/hecker24/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "**Top 15%** – 1600+ on Leetcode",
+                            "info": "Leetcode",
+                            "text": "Solved 700+ problems on Leetcode, achieving a rating of 1600+, 15+ Badges and ranking in the top 15% of users."
+                        }
+                    }
+                },
+                {
+                    "dates": {
+                        "start": null,
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "more_info", "href": "https://certificate.codingninjas.com/verify/973b286f1d4f322a/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "Certificate of **Excellence** in Data structures and Algorithms",
+                            "info": "Coding Ninjas",
+                            "text": "Achieved a certificate of excellence in Data Structures and Algorithms from Coding Ninjas, demonstrating proficiency in problem-solving and algorithmic thinking."
+                        }
+                    }
+                },
+                {
+                    "dates": {
+                        "start": null,
+                        "end": null
+                    },
+                    "links": [],
+                    "locales": {
+                        "en": {
+                            "title": "**Hacktoberfest** – 2020",
+                            "info": "DigitalOcean",
+                            "text": "Earned <b>Hacktoberfest 2020</b> goodies by making <b>successful open-source contributions.</b>"
+                        }
+                    }
+                },
+                {
+                    "dates": {
+                        "start": null,
+                        "end": null
+                    },
+                    "links": [],
+                    "locales": {
+                        "en": {
+                            "title": "**Certificate Of Merit** – HighSchool",
+                            "info": "CBSE",
+                            "text": "Achieved a certificate of merit in High School from CBSE, for scoring 10 CGPA."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
