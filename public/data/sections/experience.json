@@ -71,6 +71,24 @@
                             "tags": ["Node.js", "Express.js", "REST APIs"]
                         }
                     }
+                },
+                {
+                    "icon": {
+                        "img": "images/pictures/indiazakat.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "04/01/2021",
+                        "end": "05/01/2021"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**Volunteer** | Student Fundraiser",
+                            "info": "IndiaZakat.com",
+                            "text": "My role was to raise causes for people in need, spreading awareness, managing documentation and communications."
+                        }
+                    }
                 }
             ]
         }
