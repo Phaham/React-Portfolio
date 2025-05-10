@@ -112,7 +112,7 @@
                     },
 
                     "links": [
-                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Phaham/BoogieBites"}
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Phaham/quickcache"}
                     ],
 
                     "locales": {
