@@ -64,6 +64,17 @@
                         "fa": "fa-brands fa-linkedin",
                         "faColors": {"bg": null, "fill": null}
                     }
+                },
+                {
+                    "value": "@phaham",
+                    "links": [
+                        {"href": "https://leetcode.com/u/hecker24/"}
+                    ],
+                    "icon": {
+                        "img": "/images/svg/leetcode.svg",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    }
                 }
             ]
         },
@@ -189,6 +200,32 @@
                             "tags": ["Books", "Animes", "Badminton"]
                         }
                     }
+                }
+            ]
+        },
+        {
+            "id": "resume",
+            "component": "ArticleInfoBlock",
+            "config": {},
+            "locales": {
+                "en": {
+                    "title": "My **Resume**",
+                    "text": "<p>Click the button below to download my resume.</p>"
+                }
+            },
+            "items": [
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-file-pdf",
+                        "faColors": null
+                    },
+                    "links": [
+                        {
+                            "href": "/files/Phaham_Resume.pdf",
+                            "text": "Download Resume"
+                        }
+                    ]
                 }
             ]
         }

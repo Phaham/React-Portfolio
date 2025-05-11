@@ -61,54 +61,68 @@ export const useParser = () => {
         options = options || {}
         options.hideDayFromDates = options.hideDayFromDates || true
 
-        return rawItems.map((item, key) => {
-            const locales = item['locales']
-            const icon = item['icon']
-            const dates = item['dates']
-            const links = item['links']
-            const media = item['media']
+        return rawItems.map((item) => {
+            const locales = item.locales || {}
+            const icon = item.icon || {}
+            const dates = item.dates
+            const media = item.media
 
-            const parsedItem = {}
-            parsedItem.title = utils.parseJsonText(getTranslation(locales, "title"))
-            parsedItem.info = utils.parseJsonText(getTranslation(locales, "info", true))
-            parsedItem.text = utils.parseJsonText(getTranslation(locales, "text", true))
-            parsedItem.tags = getTranslation(locales, "tags", true) || []
-
-            parsedItem.img = icon && icon.img ? utils.resolvePath(icon.img) : null
-            parsedItem.faIcon = icon?.fa || null
-            parsedItem.faIconColors = icon?.faColors || null
-
-            parsedItem.dateInterval = dates ?
-                utils.formatDateInterval(dates?.start, dates?.end, selectedLanguageId, true, options.hideDayFromDates) :
-                null
-            parsedItem.dateStarted = dates?.start
-            parsedItem.dateEnded = dates?.end
-
-            parsedItem.links = links ? links.map((link, key) => {
-                return {
+            // Extract default links array
+            let links = []
+            if (Array.isArray(item.links)) {
+                links = item.links.map(link => ({
                     href: link.href,
                     hrefLabel: getString(link.string || 'link'),
                     faIcon: link.faIcon
-                }
-            }) : []
+                }))
+            }
+            // Fallback: detect a localized 'button' field
+            const buttonObj = (locales[selectedLanguageId] && locales[selectedLanguageId].button) || (locales.en && locales.en.button)
+            if (buttonObj && buttonObj.link) {
+                links.push({
+                    href: buttonObj.link,
+                    hrefLabel: buttonObj.text || getString('link'),
+                    faIcon: icon.fa
+                })
+            }
 
-            parsedItem.mediaOptions = []
+            const parsedItem = {
+                title: utils.parseJsonText(getTranslation(locales, 'title', true)),
+                info: utils.parseJsonText(getTranslation(locales, 'info', true)),
+                text: utils.parseJsonText(getTranslation(locales, 'text', true)),
+                tags: getTranslation(locales, 'tags', true) || [],
+
+                img: icon.img ? utils.resolvePath(icon.img) : null,
+                faIcon: icon.fa || null,
+                faIconColors: icon.faColors || null,
+
+                dateInterval: dates
+                    ? utils.formatDateInterval(dates.start, dates.end, selectedLanguageId, true, options.hideDayFromDates)
+                    : null,
+                dateStarted: dates?.start,
+                dateEnded: dates?.end,
+
+                links,
+                mediaOptions: [],
+
+                categoryId: item.categoryId,
+                value: item.value
+            }
+
+            // Media options
             if(media) {
-                const screenshots = item.media['screenshots']
-                const youtubeVideo = item.media['youtubeVideo']
-
-                if(screenshots && screenshots.images?.length) {
+                const {screenshots, youtubeVideo} = media
+                if(screenshots?.images?.length) {
                     parsedItem.mediaOptions.push({
-                        id: "gallery",
+                        id: 'gallery',
                         target: screenshots,
                         tooltip: getString('open_gallery'),
                         faIcon: 'fa-solid fa-camera'
                     })
                 }
-
                 if(youtubeVideo) {
                     parsedItem.mediaOptions.push({
-                        id: "youtube",
+                        id: 'youtube',
                         target: youtubeVideo,
                         tooltip: getString('watch_video'),
                         faIcon: 'fa-brands fa-youtube'
@@ -116,9 +130,8 @@ export const useParser = () => {
                 }
             }
 
-            parsedItem.categoryId = item['categoryId']
-            parsedItem.firstLink = parsedItem.links?.length ? parsedItem.links[0] : null
-            parsedItem.value = item['value']
+            // Helper fields
+            parsedItem.firstLink = parsedItem.links.length ? parsedItem.links[0] : null
 
             return parsedItem
         })
@@ -130,43 +143,39 @@ export const useParser = () => {
         })
     }
 
+    // Other formatters (unchanged)
     const formatForGrid = (rawItems) => {
         const parsedItems = parseArticleItems(rawItems)
-        for(const item of parsedItems) {
-            item.value = item.value || item.info
-            item.label = item.value
-            item.href = item.firstLink?.href
-        }
-
-        return parsedItems
+        return parsedItems.map(item => ({
+            ...item,
+            value: item.value || item.info,
+            label: item.value || item.info,
+            href: item.firstLink?.href
+        }))
     }
 
     const formatForActivityList = (rawItems) => {
         const parsedItems = parseArticleItems(rawItems)
-        for(const item of parsedItems) {
-            const titleSuffix = item.tags.length ? ' – ' : ''
-            item.title = item.title + titleSuffix
-
-            item.progress = item.value !== null && item.value !== undefined ? Number(item.value) : null
-            item.description = item.info
-            item.fallbackIcon = item.faIcon
-            item.fallbackIconColors = item.faIconColors
-        }
-
-        return parsedItems
+        return parsedItems.map(item => ({
+            ...item,
+            title: item.title + (item.tags.length ? ' – ' : ''),
+            progress: item.value != null ? Number(item.value) : null,
+            description: item.info,
+            fallbackIcon: item.faIcon,
+            fallbackIconColors: item.faIconColors
+        }))
     }
 
     const formatForThreads = (rawItems) => {
         const parsedItems = parseArticleItems(rawItems)
-        for(const item of parsedItems) {
-            item.date = item.dateInterval
-            item.place = item.info
-            item.description = item.text
-            item.href = item.firstLink?.href
-            item.hrefLabel = item.firstLink?.hrefLabel
-        }
-
-        return parsedItems
+        return parsedItems.map(item => ({
+            ...item,
+            date: item.dateInterval,
+            place: item.info,
+            description: item.text,
+            href: item.firstLink?.href,
+            hrefLabel: item.firstLink?.hrefLabel
+        }))
     }
 
     const formatForTimeline = (rawItems) => {
