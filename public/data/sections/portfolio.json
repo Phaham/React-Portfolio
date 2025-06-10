@@ -100,6 +100,26 @@
                         }
                     }
                 },
+                {
+                    "categoryId": "freelance",
+                    "icon": {
+                        "img": "images/pictures/nsalon.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+
+                    "links": [
+                        {"faIcon": "fa-solid fa-link", "href": "https://nsalon.in/"}
+                    ],
+
+                    "locales": {
+                        "en": {
+                            "title": "Nsalon | Salon Website",
+                            "text": "Developed a <b>whatsapp notifications feature</b> to send messages to users, store managers and owner, featuring an <b>admin panel</b> for <b> website and notification management</b>.",
+                            "tags": ["JavaScript", "REST", "ACF", "WordPress"]
+                        }
+                    }
+                },
 
                 {
                     "categoryId": "apps",
