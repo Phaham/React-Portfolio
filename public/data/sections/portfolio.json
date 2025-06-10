@@ -37,6 +37,27 @@
 
             "items": [
                 {
+                    "categoryId": "apps",
+                    "icon": {
+                        "img": "images/pictures/drawsync.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+
+                    "links": [
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Phaham/DrawSync"},
+                        {"faIcon": "fa-solid fa-link", "href": "https://draw-sync-eight.vercel.app/"}
+                    ],
+
+                    "locales": {
+                        "en": {
+                            "title": "DrawSync | Collaborative Drawing App",
+                            "text": "Developed a <b>real-time collaborative drawing application</b> using <b>Socket.io</b> and <b>Node.js</b>, allowing users to draw together in real-time with features like <b>shapes selection </b>, <b>color selection</b>, and <b>canvas saving</b>.",   
+                            "tags": ["React.js", "Node.js", "Tailwind CSS", "Express.js", "MongoDB"]
+                        }
+                    }
+                },
+                {
                     "categoryId": "utilities",
                     "icon": {
                         "img": "images/pictures/jobs-territory.jpg",
