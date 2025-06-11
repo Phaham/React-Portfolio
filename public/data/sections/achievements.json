@@ -172,6 +172,22 @@
                         "end": null
                     },
                     "links": [
+                        { "string": "more_info", "href": "https://drive.google.com/file/d/1yGoVFXeHvGviUliqaFcHBxzfY9XRRhVR/view?usp=sharing" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "**Runner Up** – Flipkart grid 5.0",
+                            "info": "Flikpkart",
+                            "text": "Developed a Health management system for Flipkart Grid 5.0, securing the **Runner Up** position in the competition."
+                        }
+                    }
+                },
+                {
+                    "dates": {
+                        "start": null,
+                        "end": null
+                    },
+                    "links": [
                         { "string": "more_info", "href": "https://certificate.codingninjas.com/verify/973b286f1d4f322a/" }
                     ],
                     "locales": {
