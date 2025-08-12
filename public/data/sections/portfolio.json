@@ -51,7 +51,7 @@
 
                     "locales": {
                         "en": {
-                            "title": "GiftsNGears | Gifts and Autoparts Delivery WebApp",
+                            "title": "GiftsNGears | Gifts Delivery WebApp",
                             "text": "GiftsNGears is a platform specializing in ordering and delivering of gifts and auto parts, featuring a comprehensive admin portal for real-time content management.",   
                             "tags": ["React.js", "Node.js", "Material UI", "Express.js", "MongoDB"]
                         }
