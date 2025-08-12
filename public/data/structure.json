@@ -6,6 +6,19 @@
             "jsonPath": "/data/sections/cover.json",
             "faIcon": "fa-solid fa-address-card"
         },
+        {
+            "id": "experience",
+            "categoryId": "background",
+            "jsonPath": "/data/sections/experience.json",
+            "faIcon": "fa-solid fa-briefcase"
+        },
+
+        {
+            "id": "portfolio",
+            "categoryId": "showcase",
+            "jsonPath": "/data/sections/portfolio.json",
+            "faIcon": "fa-solid fa-folder-open"
+        },
 
         {
             "id": "education",
@@ -19,20 +32,6 @@
             "categoryId": "showcase",
             "jsonPath": "/data/sections/skills.json",
             "faIcon": "fa-solid fa-tools"
-        },
-
-        {
-            "id": "experience",
-            "categoryId": "background",
-            "jsonPath": "/data/sections/experience.json",
-            "faIcon": "fa-solid fa-briefcase"
-        },
-
-        {
-            "id": "portfolio",
-            "categoryId": "showcase",
-            "jsonPath": "/data/sections/portfolio.json",
-            "faIcon": "fa-solid fa-folder-open"
         },
 
         {

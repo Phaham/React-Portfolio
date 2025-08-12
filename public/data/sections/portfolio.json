@@ -39,6 +39,27 @@
                 {
                     "categoryId": "apps",
                     "icon": {
+                        "img": "images/pictures/gifts.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+
+                    "links": [
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Phaham/GiftsNGears"},
+                        {"faIcon": "fa-solid fa-link", "href": "https://wears-n-gears.vercel.app/"}
+                    ],
+
+                    "locales": {
+                        "en": {
+                            "title": "GiftsNGears | Gifts and Autoparts Delivery WebApp",
+                            "text": "GiftsNGears is a platform specializing in ordering and delivering of gifts and auto parts, featuring a comprehensive admin portal for real-time content management.",   
+                            "tags": ["React.js", "Node.js", "Material UI", "Express.js", "MongoDB"]
+                        }
+                    }
+                },
+                {
+                    "categoryId": "apps",
+                    "icon": {
                         "img": "images/pictures/drawsync.png",
                         "fa": "",
                         "faColors": {"bg": null, "fill": null}
