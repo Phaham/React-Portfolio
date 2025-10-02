@@ -39,6 +39,27 @@
                 {
                     "categoryId": "apps",
                     "icon": {
+                        "img": "images/pictures/nextide.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+
+                    "links": [
+                        {"faIcon": "fa-brands fa-github", "href": "https://github.com/Phaham/NextIDE"},
+                        {"faIcon": "fa-solid fa-link", "href": "https://next-cloud-ide.vercel.app/"}
+                    ],
+
+                    "locales": {
+                        "en": {
+                            "title": "NextIDE | A Cloud Code Editor",
+                            "text": " A multi-language online code editor with secure sandboxed execution, auth, and shareable snippets.",   
+                            "tags": ["Next.js", "TypeScript", "Tailwind CSS", "ConvexDB", "Clerk"]
+                        }
+                    }
+                },
+                {
+                    "categoryId": "apps",
+                    "icon": {
                         "img": "images/pictures/gifts.png",
                         "fa": "",
                         "faColors": {"bg": null, "fill": null}
